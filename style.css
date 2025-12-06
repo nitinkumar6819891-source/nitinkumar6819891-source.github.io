@@ -3,11 +3,8 @@
   --maxw:1200px; --radius:12px;
 }
 *{box-sizing:border-box}
-body{
-  margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
-  background:var(--bg);color:#e6eef8;-webkit-font-smoothing:antialiased;
-}
-.container{width:94%;max-width:var(--maxw);margin:36px auto;background:transparent;padding:28px;}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#e6eef8;}
+.container{width:94%;max-width:var(--maxw);margin:20px auto;padding:28px;}
 nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0;margin-bottom:10px}
 .nav-brand{color:var(--gold);font-weight:800;letter-spacing:1px;font-size:20px}
 .nav-links a{color:#e6eef8;text-decoration:none;margin-left:18px;font-weight:600}
@@ -29,21 +26,9 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0;
 .project-card{background:#0f1113;padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
 .muted{color:var(--muted);font-size:14px}
 .footer{margin-top:40px;text-align:center;color:var(--muted);font-size:13px;padding:12px}
-
-/* Contact icons row */
-.contact-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.icon-circle{width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center;margin-bottom:10px}
-.icon-label{text-align:center;color:var(--muted);font-weight:600}
-
-/* Responsive */
-@media(max-width:1000px){
-  .project-grid{grid-template-columns:repeat(2,1fr)}
-  .profile-photo{width:260px;height:260px}
-}
-@media(max-width:700px){
-  nav{padding:12px}
-  .hero{flex-direction:column-reverse}
-  .profile-photo{width:200px;height:200px}
-  .project-grid{grid-template-columns:1fr}
-  .nav-links{margin-top:12px}
-}
+.progress{background:rgba(255,255,255,0.06);height:14px;border-radius:8px;overflow:hidden}
+.progress > div{height:100%;background:linear-gradient(90deg,var(--gold), #e3b85a);border-radius:8px}
+.experience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+.edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+@media(max-width:1000px){.project-grid{grid-template-columns:repeat(2,1fr)}.profile-photo{width:260px;height:260px}}
+@media(max-width:700px){.hero{flex-direction:column-reverse}.profile-photo{width:200px;height:200px}.project-grid{grid-template-columns:1fr}.experience-grid{grid-template-columns:1fr}.edu-grid{grid-template-columns:1fr}}
