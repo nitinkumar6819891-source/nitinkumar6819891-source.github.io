@@ -1,127 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nitin Kumar Prajapati — Portfolio</title>
-  <style>
-    :root{
-      --bg:#f6f8fb; --card:#ffffff; --accent:#0b5fff; --muted:#6b7280;
-      --maxw:950px; font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
-    }
-    body{margin:0;background:var(--bg);color:#0f172a;display:flex;justify-content:center;padding:36px;}
-    .container{width:100%;max-width:var(--maxw);}
-    .card{background:var(--card);border-radius:14px;padding:28px;box-shadow:0 6px 24px rgba(12, 20, 40, .06);}
-    .header{display:flex;gap:18px;align-items:center}
-    .avatar{
-      width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,#e6eefb,#eef2ff);
-      display:flex;align-items:center;justify-content:center;font-size:28px;color:#0b5fff;font-weight:700;
-    }
-    h1{margin:0;font-size:22px}
-    h2{margin:.6rem 0 0;font-size:14px;color:var(--muted);font-weight:600}
-    .bio{margin-top:18px;color:#111827;line-height:1.5}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:20px}
-    .section{background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02));padding:18px;border-radius:10px}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{padding:6px 10px;border-radius:999px;background:#f1f5f9;border:1px solid #e6eef8;font-size:13px}
-    .projects{display:flex;flex-direction:column;gap:12px}
-    .proj{padding:10px;border-radius:8px;background:#fff;border:1px solid #eef2ff}
-    .muted{color:var(--muted);font-size:13px}
-    .linkbtn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;margin-top:10px}
-    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
-    @media(max-width:880px){ .grid{grid-template-columns:1fr; } .header{flex-direction:row} .avatar{width:72px;height:72px} }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Kumar Prajapati - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 8px;
+            opacity: 0.8;
+        }
+
+        section {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        h2 {
+            border-left: 5px solid #222;
+            padding-left: 10px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #222;
+            color: white;
+            padding: 6px 12px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .project-box {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #0077cc;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="header">
-        <div class="avatar">NP</div>
-        <div style="flex:1">
-          <h1>Nitin Kumar Prajapati</h1>
-          <h2>Account & Finance Professional • Power BI & Business Analytics Enthusiast</h2>
-          <div class="bio">
-            Account & Finance professional with <strong>12+ years</strong> experience in financial operations, MIS reporting,
-            budgeting and data-driven decision making. Currently learning and building Power BI, SQL and analytics projects
-            to transition towards data-focused roles.
-          </div>
-          <div style="margin-top:12px">
-            <a class="linkbtn" href="https://github.com/nitinkumar6819891-source" target="_blank" rel="noopener">View GitHub</a>
-            <a class="linkbtn" style="background:#0a66c2;margin-left:8px" href="https://linkedin.com/in/nitin-kumar-prajapati-86022a163" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="grid">
-        <!-- Left column -->
-        <div>
-          <div class="section">
-            <h3 style="margin:0 0 8px 0">Skills</h3>
-            <div class="skills">
-              <div class="skill">Power BI</div>
-              <div class="skill">SQL</div>
-              <div class="skill">Excel (Advanced)</div>
-              <div class="skill">Python (Basics)</div>
-              <div class="skill">DAX</div>
-              <div class="skill">MIS Reporting</div>
-              <div class="skill">Budgeting</div>
-              <div class="skill">Financial Reconciliation</div>
-            </div>
-          </div>
+<header>
+    <h1>Nitin Kumar Prajapati</h1>
+    <p>Account & Finance Professional (12+ yrs) | Power BI | SQL | Excel | Analytics</p>
+</header>
 
-          <div class="section" style="margin-top:14px">
-            <h3 style="margin:0 0 8px 0">Selected Projects</h3>
-            <div class="projects">
-              <div class="proj">
-                <strong>Excel Dashboard — Financial KPI Dashboard</strong>
-                <div class="muted">Interactive Excel dashboard for tracking monthly KPIs, variance analysis and expense monitoring.</div>
-                <div style="margin-top:8px"><a href="#" style="text-decoration:none;color:var(--accent)">View repo (coming soon)</a></div>
-              </div>
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am an Accounts & Finance professional with 12+ years of experience in MIS, reporting, budgeting, and analysis.  
+        Currently exploring **Power BI, SQL, Excel automation, and Python** to transition into Business Analytics / Data roles.
+    </p>
+</section>
 
-              <div class="proj">
-                <strong>Power BI — Sales & Finance Performance</strong>
-                <div class="muted">Power BI report combining sales, revenue and cost data for trend analysis and forecasting.</div>
-                <div style="margin-top:8px"><a href="#" style="text-decoration:none;color:var(--accent)">View report (coming soon)</a></div>
-              </div>
-
-              <div class="proj">
-                <strong>SQL Practice & HackerRank</strong>
-                <div class="muted">SQL problem solving to strengthen data extraction and transformation skills. HackerRank profile link to add.</div>
-                <div style="margin-top:8px"><a href="#" style="text-decoration:none;color:var(--accent)">HackerRank (add link)</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="section" style="margin-top:14px">
-            <h3 style="margin:0 0 8px 0">About / Contact</h3>
-            <div class="muted">Open to collaboration on analytics, dashboard automation and finance process improvements. You can reach me via LinkedIn.</div>
-          </div>
-        </div>
-
-        <!-- Right column -->
-        <div>
-          <div class="section">
-            <h3 style="margin:0 0 8px 0">Quick Info</h3>
-            <div class="muted" style="margin-bottom:8px"><strong>Location:</strong> Nomad</div>
-            <div class="muted" style="margin-bottom:8px"><strong>Experience:</strong> 12+ years</div>
-            <div class="muted" style="margin-bottom:8px"><strong>Looking for:</strong> Data / Analytics roles, dashboarding & reporting</div>
-          </div>
-
-          <div class="section" style="margin-top:12px">
-            <h3 style="margin:0 0 8px 0">Profile Stats</h3>
-            <div style="font-size:13px" class="muted">Your profile README and repos can show GitHub stats.</div>
-            <div style="margin-top:10px">
-              <!-- Replace username below if you change repo name -->
-              <img src="https://github-readme-stats.vercel.app/api?username=nitinkumar6819891-source&show_icons=true&theme=default" alt="GitHub stats" style="width:100%;border-radius:8px" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <footer>
-        Built by Nitin • &nbsp; This site is hosted on GitHub Pages.
-      </footer>
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Power BI</span>
+        <span>SQL</span>
+        <span>Excel</span>
+        <span>Python</span>
+        <span>Financial Reporting</span>
+        <span>MIS Reporting</span>
+        <span>Dashboarding</span>
     </div>
-  </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="project-box">
+        <h3>📊 Excel Interactive Dashboard</h3>
+        <p>A dynamic Excel dashboard built for monthly sales and MIS reporting.</p>
+    </div>
+
+    <div class="project-box">
+        <h3>🏅 HackerRank Profile</h3>
+        <p>SQL & Python practice — showcasing coding and problem-solving skills.</p>
+        <a href="#" target="_blank">View HackerRank</a>
+    </div>
+
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: nitinkumar6819891@gmail.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/nitin-kumar-prajapati-86022a163" target="_blank">View Profile</a></p>
+    <p>GitHub: <a href="https://github.com/nitinkumar6819891-source" target="_blank">GitHub</a></p>
+</section>
+
+<footer>
+    © 2025 Nitin Kumar Prajapati • Portfolio Website
+</footer>
+
 </body>
 </html>
