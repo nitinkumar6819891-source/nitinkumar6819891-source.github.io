@@ -1,0 +1,31 @@
+:root{
+  --bg:#0b0b0d; --card:#0f1720; --gold:#f6c85f; --muted:#9aa4b2;
+  --maxw:1100px; --radius:12px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:var(--bg);color:#e6eef8;-webkit-font-smoothing:antialiased;
+}
+.container{width:94%;max-width:var(--maxw);margin:36px auto;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6);}
+nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.02);margin-bottom:18px}
+.nav-brand{color:var(--gold);font-weight:800;letter-spacing:1px}
+.nav-links a{color:#e6eef8;text-decoration:none;margin-left:16px;font-weight:600}
+.hero{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.hero-text{flex:1;min-width:260px}
+.hero-text h1{margin:0;font-size:28px;color:var(--gold)}
+.hero-text p{color:var(--muted);line-height:1.5}
+.hero-cta{margin-top:14px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+.btn-primary{background:var(--gold);color:#0b0b0d}
+.btn-outline{border:1px solid rgba(255,255,255,0.06);color:#e6eef8;background:transparent}
+.profile-photo{width:320px;height:320px;border-radius:50%;object-fit:cover;border:6px solid rgba(246,200,95,0.12);flex:0 0 320px}
+.section{margin-top:28px}
+.card{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+.section h2{color:var(--gold);margin:0 0 12px 0}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.tag{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.02);font-size:14px;color:#dfe9f2}
+.project{padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.02);margin-bottom:12px}
+.muted{color:var(--muted);font-size:14px}
+.footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:12px}
+@media(max-width:900px){.hero{flex-direction:column-reverse}.profile-photo{width:200px;height:200px}}
