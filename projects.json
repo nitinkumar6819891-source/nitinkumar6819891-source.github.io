@@ -1,16 +1,16 @@
 [
   {
-    "title": "Excel Dashboard — Financial KPI Dashboard",
-    "link": "https://medium.com/@nitinkumar6819891/sample-excel-dashboard",
-    "date": "2024-08-20",
-    "excerpt": "Interactive Excel dashboard to track monthly KPIs, variance analysis and expense monitoring.",
+    "title": "Excel Dashboard – Finance KPI",
+    "excerpt": "Excel dashboard with KPIs, variance, and financial trends.",
+    "date": "2024-01-10",
+    "link": "https://medium.com/@nitinkumar6819891",
     "thumbnail": "https://via.placeholder.com/800x400?text=Excel+Dashboard"
   },
   {
-    "title": "Power BI — Sales & Finance Report",
-    "link": "https://medium.com/@nitinkumar6819891/sample-powerbi-report",
-    "date": "2024-05-11",
-    "excerpt": "Power BI report combining sales, revenue and cost for forecasting.",
+    "title": "Power BI – Sales Report",
+    "excerpt": "Interactive Power BI dashboard for sales & revenue insights.",
+    "date": "2024-02-01",
+    "link": "https://medium.com/@nitinkumar6819891",
     "thumbnail": "https://via.placeholder.com/800x400?text=Power+BI"
   }
 ]
