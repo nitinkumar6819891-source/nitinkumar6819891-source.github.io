@@ -1,6 +1,48 @@
+<!-- ================= PROJECTS SECTION (AUTO-LOAD MEDIUM POSTS) ================= -->
 <section id="projects">
     <h2 class="section-title">PROJECTS</h2>
+
     <div id="medium-projects" class="projects-container">
         <p style="text-align:center; color:white;">Loading latest Medium projects…</p>
     </div>
 </section>
+
+<script>
+    async function loadMediumPosts() {
+        const rssUrl = "https://medium.com/feed/@nitinkumar6819891";
+        const apiUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + rssUrl;
+
+        const container = document.getElementById("medium-projects");
+
+        try {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+
+            container.innerHTML = ""; // Clear loading text
+
+            // Get latest 3 Medium articles
+            const posts = data.items.slice(0, 3);
+
+            posts.forEach(post => {
+                const card = document.createElement("div");
+                card.className = "project-card";
+
+                const image = post.thumbnail || "https://via.placeholder.com/300";
+
+                card.innerHTML = `
+                    <img src="${image}" alt="Project Image">
+                    <div class="project-title">${post.title}</div>
+                    <div class="project-date">${new Date(post.pubDate).toDateString()}</div>
+                    <a href="${post.link}" target="_blank" class="project-link">Read Project</a>
+                `;
+
+                container.appendChild(card);
+            });
+
+        } catch (error) {
+            container.innerHTML = "<p style='color:red;'>Unable to load Medium posts.</p>";
+        }
+    }
+
+    loadMediumPosts();
+</script>
